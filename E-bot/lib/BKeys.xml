@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BKeys</name>
+    </assembly>
+    <members>
+        <member name="T:WebMoney.SignerFX.BKeys">
+            <summary>
+            Представление ключей WebMoney
+            </summary>
+        </member>
+        <member name="F:WebMoney.SignerFX.BKeys.SEP">
+            <summary>
+            Разграничитель ключей при их конвертации в Base64
+            </summary>
+        </member>
+        <member name="M:WebMoney.SignerFX.BKeys.#ctor">
+            <summary>
+            Создание неинициализированного объекта
+            </summary>
+        </member>
+        <member name="M:WebMoney.SignerFX.BKeys.#ctor(System.UInt32[],System.UInt32[])">
+            <summary>
+            Создание объекта представления ключей
+            </summary>
+            <param name="expKey">Ключ "e"</param>
+            <param name="modKey">Ключ "n"</param>
+        </member>
+        <member name="M:WebMoney.SignerFX.BKeys.#ctor(System.String)">
+            <summary>
+            Создание объекта представления ключей
+            </summary>
+            <param name="value">Ключи в формате Base64, разделенные <see cref="F:WebMoney.SignerFX.BKeys.SEP"/></param>
+        </member>
+        <member name="M:WebMoney.SignerFX.BKeys.ToString">
+            <summary>
+            Строковое представление ключей
+            </summary>
+            <returns>Ключи в формате Base64, разделенные <see cref="F:WebMoney.SignerFX.BKeys.SEP"/></returns>
+        </member>
+        <member name="P:WebMoney.SignerFX.BKeys.ExpKey">
+            <summary>
+            Ключ E
+            </summary>
+        </member>
+        <member name="P:WebMoney.SignerFX.BKeys.ModKey">
+            <summary>
+            Ключ N
+            </summary>
+        </member>
+        <member name="T:WebMoney.SignerFX.Properties.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:WebMoney.SignerFX.Properties.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:WebMoney.SignerFX.Properties.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:WebMoney.SignerFX.Properties.Resource.InvalidValue">
+            <summary>
+              Looks up a localized string similar to Format of value is invalid!.
+            </summary>
+        </member>
+        <member name="P:WebMoney.SignerFX.Properties.Resource.NoSeparator">
+            <summary>
+              Looks up a localized string similar to There is no the separator!.
+            </summary>
+        </member>
+        <member name="P:WebMoney.SignerFX.Properties.Resource.TwoSeparators">
+            <summary>
+              Looks up a localized string similar to There is two or more separators!.
+            </summary>
+        </member>
+    </members>
+</doc>

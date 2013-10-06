@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+ <w3s.response>
+  <reqn>1</reqn>
+   <operations cnt="1" cntA="1">
+     <operation id="504424913" ts="504424913">
+      <pursesrc>R675010658902</pursesrc>
+      <pursedest>R378720716331</pursedest>
+      <amount>1.17</amount>
+      <comiss>0.00</comiss>
+      <opertype>0</opertype>
+      <wminvid>0</wminvid>
+      <orderid>0</orderid>
+      <tranid>0</tranid>
+      <period>0</period>
+      <desc>перевод средств с R675010658902 на R378720716331</desc>
+      <datecrt>20110208 21:17:18</datecrt>
+      <dateupd>20110208 21:17:18</dateupd>
+      <corrwm>375930844466</corrwm>
+      <rest>152.00</rest>
+    </operation>
+  </operations>
+  <retval>0</retval>
+  <retdesc />
+</w3s.response>

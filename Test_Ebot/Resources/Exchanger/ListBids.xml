@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<wm.exchanger.response>
+  <BankRate direction="RUR/USD">29,3489</BankRate>
+  <WMExchnagerQuerys amountin="WMZ" amountout="WMR" inoutrate="WMZ/WMR" outinrate="WMR/WMZ">
+    <query id="4902843" amountin="1480" amountout="45317,6" inoutrate="0,0326" outinrate="30,62" procentbankrate="+4,33" allamountin="1480" querydate="04.02.2011 5:33:56"></query>
+    <query id="4902592" amountin="2442,25" amountout="74800,99" inoutrate="0,0326" outinrate="30,6279" procentbankrate="+4,36" allamountin="3922,25" querydate="04.02.2011 3:40:18"></query>
+    <query id="4902713" amountin="100" amountout="3062,88" inoutrate="0,0326" outinrate="30,6288" procentbankrate="+4,36" allamountin="4022,25" querydate="04.02.2011 2:33:37"></query>
+    <query id="4902575" amountin="147,86" amountout="4528,81" inoutrate="0,0326" outinrate="30,629" procentbankrate="+4,36" allamountin="4170,11" querydate="04.02.2011 2:05:24"></query>
+    <query id="4902469" amountin="1163,76" amountout="35657,6" inoutrate="0,0326" outinrate="30,6399" procentbankrate="+4,4" allamountin="5333,87" querydate="04.02.2011 3:17:56"></query>
+    <query id="4902714" amountin="100" amountout="3064" inoutrate="0,0326" outinrate="30,64" procentbankrate="+4,4" allamountin="5433,87" querydate="04.02.2011 1:41:29"></query>
+    <query id="4902715" amountin="100" amountout="3064" inoutrate="0,0326" outinrate="30,64" procentbankrate="+4,4" allamountin="5533,87" querydate="04.02.2011 1:40:58"></query>
+    <query id="4902844" amountin="10" amountout="306,49" inoutrate="0,0326" outinrate="30,649" procentbankrate="+4,43" allamountin="5543,87" querydate="04.02.2011 2:58:12"></query>
+    <query id="4878735" amountin="1502,15" amountout="46040,89" inoutrate="0,0326" outinrate="30,6499" procentbankrate="+4,43" allamountin="7046,02" querydate="04.02.2011 1:01:08"></query>
+    <query id="4901691" amountin="100" amountout="3065" inoutrate="0,0326" outinrate="30,65" procentbankrate="+4,43" allamountin="7146,02" querydate="04.02.2011 1:23:52"></query>
+    <query id="4902446" amountin="10" amountout="306,5" inoutrate="0,0326" outinrate="30,65" procentbankrate="+4,43" allamountin="7156,02" querydate="04.02.2011 0:44:12"></query>
+    <query id="4902598" amountin="2629" amountout="80605,14" inoutrate="0,0326" outinrate="30,66" procentbankrate="+4,47" allamountin="9785,02" querydate="04.02.2011 1:20:04"></query>
+    <query id="4883114" amountin="100" amountout="3067" inoutrate="0,0326" outinrate="30,67" procentbankrate="+4,5" allamountin="9885,02" querydate="02.02.2011 18:27:14"></query>
+    <query id="4902442" amountin="30" amountout="920,69" inoutrate="0,0325" outinrate="30,6896" procentbankrate="+4,57" allamountin="9915,02" querydate="04.02.2011 1:30:59"></query>
+    <query id="4874085" amountin="50" amountout="1534,5" inoutrate="0,0325" outinrate="30,69" procentbankrate="+4,57" allamountin="9965,02" querydate="02.02.2011 16:57:53"></query>
+    <query id="4874088" amountin="30" amountout="920,7" inoutrate="0,0325" outinrate="30,69" procentbankrate="+4,57" allamountin="9995,02" querydate="02.02.2011 16:58:20"></query>
+    <query id="4890886" amountin="15,64" amountout="480,14" inoutrate="0,0325" outinrate="30,6994" procentbankrate="+4,6" allamountin="10010,66" querydate="02.02.2011 16:19:19"></query>
+    <query id="4902591" amountin="2002" amountout="61461" inoutrate="0,0325" outinrate="30,6998" procentbankrate="+4,6" allamountin="12012,66" querydate="04.02.2011 1:12:55"></query>
+    <query id="4902452" amountin="10" amountout="307" inoutrate="0,0325" outinrate="30,7" procentbankrate="+4,6" allamountin="12022,66" querydate="04.02.2011 0:45:26"></query>
+    <query id="4902607" amountin="8,5" amountout="260,95" inoutrate="0,0325" outinrate="30,7" procentbankrate="+4,6" allamountin="12031,16" querydate="04.02.2011 1:38:05"></query>
+    <query id="4902453" amountin="21542,86" amountout="662003,48" inoutrate="0,0325" outinrate="30,7296" procentbankrate="+4,7" allamountin="33574,02" querydate="04.02.2011 4:13:24"></query>
+    <query id="4902727" amountin="18000" amountout="553140" inoutrate="0,0325" outinrate="30,73" procentbankrate="+4,71" allamountin="51574,02" querydate="04.02.2011 4:12:50"></query>
+    <query id="4902576" amountin="50" amountout="1537,4" inoutrate="0,0325" outinrate="30,748" procentbankrate="+4,77" allamountin="51624,02" querydate="04.02.2011 1:00:44"></query>
+    <query id="4902580" amountin="1000" amountout="30749" inoutrate="0,0325" outinrate="30,749" procentbankrate="+4,77" allamountin="52624,02" querydate="04.02.2011 1:04:32"></query>
+    <query id="4902583" amountin="350" amountout="10762,15" inoutrate="0,0325" outinrate="30,749" procentbankrate="+4,77" allamountin="52974,02" querydate="04.02.2011 1:06:58"></query>
+    <query id="4902586" amountin="450" amountout="13837,05" inoutrate="0,0325" outinrate="30,749" procentbankrate="+4,77" allamountin="53424,02" querydate="04.02.2011 1:08:49"></query>
+    <query id="4902587" amountin="80" amountout="2459,92" inoutrate="0,0325" outinrate="30,749" procentbankrate="+4,77" allamountin="53504,02" querydate="04.02.2011 1:09:48"></query>
+    <query id="4902845" amountin="200" amountout="6149,81" inoutrate="0,0325" outinrate="30,749" procentbankrate="+4,77" allamountin="53704,02" querydate="04.02.2011 3:05:01"></query>
+    <query id="4902441" amountin="20" amountout="614,99" inoutrate="0,0325" outinrate="30,7495" procentbankrate="+4,77" allamountin="53724,02" querydate="04.02.2011 1:12:51"></query>
+    <query id="4785612" amountin="1173,87" amountout="36096,15" inoutrate="0,0325" outinrate="30,7496" procentbankrate="+4,77" allamountin="54897,89" querydate="02.02.2011 12:41:45"></query>
+    <query id="4795802" amountin="2110,05" amountout="64883,41" inoutrate="0,0325" outinrate="30,7497" procentbankrate="+4,77" allamountin="57007,94" querydate="01.02.2011 20:34:01"></query>
+    <query id="4893877" amountin="20" amountout="615" inoutrate="0,0325" outinrate="30,75" procentbankrate="+4,77" allamountin="57027,94" querydate="02.02.2011 22:35:02"></query>
+    <query id="4894017" amountin="10" amountout="307,5" inoutrate="0,0325" outinrate="30,75" procentbankrate="+4,77" allamountin="57037,94" querydate="02.02.2011 22:40:02"></query>
+    <query id="4899145" amountin="6,51" amountout="200,19" inoutrate="0,0325" outinrate="30,7511" procentbankrate="+4,78" allamountin="57044,45" querydate="03.02.2011 16:41:16"></query>
+    <query id="4885100" amountin="2321,58" amountout="71411,8" inoutrate="0,0325" outinrate="30,7599" procentbankrate="+4,81" allamountin="59366,03" querydate="01.02.2011 23:39:25"></query>
+    <query id="4887197" amountin="493,79" amountout="15193,91" inoutrate="0,0324" outinrate="30,7699" procentbankrate="+4,84" allamountin="59859,82" querydate="02.02.2011 1:18:54"></query>
+    <query id="4902952" amountin="20" amountout="615,42" inoutrate="0,0324" outinrate="30,771" procentbankrate="+4,85" allamountin="59879,82" querydate="04.02.2011 3:12:04"></query>
+    <query id="4884432" amountin="174,84" amountout="5381,06" inoutrate="0,0324" outinrate="30,777" procentbankrate="+4,87" allamountin="60054,66" querydate="04.02.2011 5:34:39"></query>
+    <query id="4902460" amountin="81,67" amountout="2513,57" inoutrate="0,0324" outinrate="30,7771" procentbankrate="+4,87" allamountin="60136,33" querydate="04.02.2011 5:34:38"></query>
+    <query id="4902975" amountin="5" amountout="153,9" inoutrate="0,0324" outinrate="30,78" procentbankrate="+4,88" allamountin="60141,33" querydate="04.02.2011 5:01:36"></query>
+    <query id="4903083" amountin="40,13" amountout="1235,39" inoutrate="0,0324" outinrate="30,7846" procentbankrate="+4,89" allamountin="60181,46" querydate="04.02.2011 5:35:05"></query>
+    <query id="4896380" amountin="50" amountout="1539,24" inoutrate="0,0324" outinrate="30,7848" procentbankrate="+4,89" allamountin="60231,46" querydate="04.02.2011 3:13:52"></query>
+    <query id="4893359" amountin="213,75" amountout="6580,28" inoutrate="0,0324" outinrate="30,7849" procentbankrate="+4,89" allamountin="60445,21" querydate="04.02.2011 4:45:11"></query>
+    <query id="4897402" amountin="20" amountout="615,7" inoutrate="0,0324" outinrate="30,785" procentbankrate="+4,89" allamountin="60465,21" querydate="04.02.2011 3:13:38"></query>
+    <query id="4897419" amountin="20" amountout="615,7" inoutrate="0,0324" outinrate="30,785" procentbankrate="+4,89" allamountin="60485,21" querydate="04.02.2011 3:13:35"></query>
+    <query id="4899150" amountin="40" amountout="1231,4" inoutrate="0,0324" outinrate="30,785" procentbankrate="+4,89" allamountin="60525,21" querydate="04.02.2011 3:13:48"></query>
+    <query id="4899893" amountin="30" amountout="923,55" inoutrate="0,0324" outinrate="30,785" procentbankrate="+4,89" allamountin="60555,21" querydate="04.02.2011 3:13:39"></query>
+    <query id="4900192" amountin="14" amountout="430,99" inoutrate="0,0324" outinrate="30,785" procentbankrate="+4,89" allamountin="60569,21" querydate="04.02.2011 3:13:23"></query>
+    <query id="4900338" amountin="40" amountout="1231,4" inoutrate="0,0324" outinrate="30,785" procentbankrate="+4,89" allamountin="60609,21" querydate="04.02.2011 3:13:43"></query>
+    <query id="4900693" amountin="10" amountout="307,85" inoutrate="0,0324" outinrate="30,785" procentbankrate="+4,89" allamountin="60619,21" querydate="04.02.2011 3:13:46"></query>
+  </WMExchnagerQuerys>
+</wm.exchanger.response>

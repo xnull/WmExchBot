@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WMKeysExtractor.Core</name>
+    </assembly>
+    <members>
+        <member name="T:WebMoney.SignerFX.Exceptions.BadKeysException">
+            <summary>
+            Неверные данные резервной копии ключей, или WMID и пароль не соответсвуют им
+            </summary>
+        </member>
+        <member name="M:WebMoney.SignerFX.Exceptions.BadKeysException.#ctor(System.String,System.String)">
+            <summary>
+            Создание объекта
+            </summary>
+            <param name="message">Сообщение</param>
+            <param name="location">Расположение в коде</param>
+        </member>
+        <member name="M:WebMoney.SignerFX.Exceptions.BadKeysException.#ctor(System.String,System.Exception)">
+            <summary>
+            Создание объекта
+            </summary>
+            <param name="message">Сообщение</param>
+            <param name="innerException">Породившее исключение</param>
+        </member>
+        <member name="M:WebMoney.SignerFX.Exceptions.BadKeysException.#ctor(System.String)">
+            <summary>
+            Создание объекта
+            </summary>
+            <param name="message">Сообщение</param>
+        </member>
+        <member name="M:WebMoney.SignerFX.Exceptions.BadKeysException.#ctor">
+            <summary>
+            Создание объекта
+            </summary>
+        </member>
+        <member name="M:WebMoney.SignerFX.Exceptions.BadKeysException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Создание объекта
+            </summary>
+            <param name="info">Данные из сериализованных объектов о созданном исключении</param>
+            <param name="context">Контекстные сведения об источнике или назначении</param>
+        </member>
+        <member name="P:WebMoney.SignerFX.Exceptions.BadKeysException.Location">
+            <summary>
+            Точка, где возникла ошибка
+            </summary>
+        </member>
+        <member name="T:WebMoney.SignerFX.Extractor">
+            <summary>
+            Фабрика объектов BKeys. Создает объект класса BKeys (представление ключей WM Keeper).
+            </summary>
+        </member>
+        <member name="M:WebMoney.SignerFX.Extractor.#ctor(System.Byte[],System.String,System.String)">
+            <summary>
+            Создание объекта Extractor
+            </summary>
+            <param name="key">Байты файла резервной копии ключей</param>
+            <param name="id">WMID</param>
+            <param name="password">Пароль резервной копии файла ключей</param>
+        </member>
+        <member name="P:WebMoney.SignerFX.Extractor.Keys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WebMoney.SignerFX.Keys">
+            <summary>
+            Представление WebMoney ключей
+            </summary>
+        </member>
+        <member name="M:WebMoney.SignerFX.Keys.#ctor(System.Byte[],System.String,System.String)">
+            <summary>
+            Инициализация объекта
+            </summary>
+            <param name="keysData">Файл ключей в виде байтового массива</param>
+            <param name="id">WMID</param>
+            <param name="password">Пароль</param>
+        </member>
+        <member name="T:WebMoney.SignerFX.Exceptions.KeysSizeException">
+            <summary>
+            Неверный размер резервной копии файла ключей.
+            </summary>
+        </member>
+        <member name="M:WebMoney.SignerFX.Exceptions.KeysSizeException.#ctor(System.String,System.Exception)">
+            <summary>
+            Создание объекта
+            </summary>
+            <param name="message">Сообщение</param>
+            <param name="innerException">Породившее исключение</param>
+        </member>
+        <member name="M:WebMoney.SignerFX.Exceptions.KeysSizeException.#ctor(System.String)">
+            <summary>
+            Создание объекта
+            </summary>
+            <param name="message">Сообщение</param>
+        </member>
+        <member name="M:WebMoney.SignerFX.Exceptions.KeysSizeException.#ctor">
+            <summary>
+            Создание объекта
+            </summary>
+        </member>
+        <member name="M:WebMoney.SignerFX.Exceptions.KeysSizeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Создание объекта
+            </summary>
+            <param name="info">Данные из сериализованных объектов о созданном исключении</param>
+            <param name="context">Контекстные сведения об источнике или назначении</param>
+        </member>
+    </members>
+</doc>

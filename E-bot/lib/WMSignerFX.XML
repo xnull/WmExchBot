@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WMSignerFX</name>
+    </assembly>
+    <members>
+        <member name="T:WebMoney.SignerFX.Signer">
+            <summary>
+            Подпись строки
+            </summary>
+        </member>
+        <member name="M:WebMoney.SignerFX.Signer.#ctor(System.String)">
+            <summary>
+            Инициализация объекта Base64 String представлением ключей
+            </summary>
+            <param name="keysValue">Представление ключей в формате Base64 String</param>
+        </member>
+        <member name="M:WebMoney.SignerFX.Signer.#ctor(WebMoney.SignerFX.BKeys)">
+            <summary>
+            Инициализация объектом типа BKeys
+            </summary>
+            <param name="keys">Объект BKeys</param>
+        </member>
+        <member name="M:WebMoney.SignerFX.Signer.AsyncSign(System.String,System.Boolean)">
+            <summary>
+            Асинхронная версия метода Sign
+            </summary>
+            <param name="value">Исходная строка</param>
+            <param name="randomEnable">Применять генерацию случайных чисел</param>
+        </member>
+        <member name="M:WebMoney.SignerFX.Signer.Sign(System.String,System.Boolean)">
+            <summary>
+            Получение хеша (подписи) строки
+            </summary>
+            <param name="value">Исходная строка</param>
+            <param name="randomEnable">Применять генерацию случайных чисел</param>
+            <returns>Хеш-значение</returns>
+        </member>
+        <member name="E:WebMoney.SignerFX.Signer.SignComplete">
+            <summary>
+            Завершение асинхронного вызова
+            </summary>
+        </member>
+        <member name="T:WebMoney.Cryptography.ModExp">
+            <summary>
+            Вычисление степени натурального числа по модулю. Быстрый бинарный алгоритм.
+            Существует объектно-ориентированная реализация данного алгоритма. Более наглядная, но проигрывает в скорости.
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.ModExp.#ctor">
+            <summary>
+            Создание объекта
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.ModExp.Initialize">
+            <summary>
+            Инициализация класса для повторного использования
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.ModExp.GetUint16Result(System.UInt32[],System.UInt32[],System.UInt32[])">
+            <summary>
+            Возведение в степень по модулю
+            </summary>
+            <param name="value">Значение</param>
+            <param name="exponent">Степень</param>
+            <param name="modulus">Модуль</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.ModExp.GetUInt32Result(System.UInt32[],System.UInt32[],System.UInt32[])">
+            <summary>
+            Возведение в степень по модулю
+            </summary>
+            <param name="value">Значение</param>
+            <param name="exponent">Степень</param>
+            <param name="modulus">Модуль</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="T:WebMoney.Cryptography.MD4">
+            <summary>
+            Получение хеша по алгоритму MD4
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.#ctor">
+            <summary>
+            Создание объекта
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.Initialize">
+            <summary>
+            Инициализация. Вызвать перед повторным исползованием объекта.
+            </summary>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.GetUint32Hash(System.String)">
+            <summary>
+            Получение хеша (массив 32-битных типов)
+            </summary>
+            <param name="value">Строка</param>
+            <returns>Хеш</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.GetUint32Hash(System.String,System.Text.Encoding)">
+            <summary>
+            Получение хеша (массив 32-битных типов)
+            </summary>
+            <param name="value">Строка</param>
+            <param name="encoding">Кодировка строки</param>
+            <returns>Хеш</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.GetUint32Hash(System.Byte[])">
+            <summary>
+            Получение хеша (массив 32-битных типов)
+            </summary>
+            <param name="array">Значение</param>
+            <returns>Хеш</returns>
+        </member>
+        <member name="M:WebMoney.Cryptography.MD4.GetUint32Hash(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Получение хеша (массив 32-битных типов)
+            </summary>
+            <param name="array">Значение</param>
+            <param name="ibStart">Начальная позиция</param>
+            <param name="size">Размер</param>
+            <returns>Хеш</returns>
+        </member>
+        <member name="T:WebMoney.SignerFX.SignEventArgs">
+            <summary>
+            Результат асинхронного вызова
+            </summary>
+        </member>
+        <member name="P:WebMoney.SignerFX.SignEventArgs.InnerException">
+            <summary>
+            Исключение, если операция не выполнена успешно (иначе null)
+            </summary>
+        </member>
+        <member name="P:WebMoney.SignerFX.SignEventArgs.DigitalSignature">
+            <summary>
+            Цифровая подпись
+            </summary>
+        </member>
+    </members>
+</doc>

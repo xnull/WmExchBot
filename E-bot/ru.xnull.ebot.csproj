@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20FBCD46-A92D-4C2E-AC98-5F270C3597EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ru.xnull.ebot</RootNamespace>
+    <AssemblyName>E-bot</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>licence.pfx</AssemblyOriginatorKeyFile>
+    <StartupObject>ru.xnull.startup.Program</StartupObject>
+    <SignManifests>false</SignManifests>
+    <ManifestCertificateThumbprint>55234F9AF71B79B0DBF74EEF3284AADB11EC5258</ManifestCertificateThumbprint>
+    <ManifestKeyFile>E-bot_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <PublishUrl>C:\e-bot\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BKeys, Version=3.0.3117.25553, Culture=neutral, PublicKeyToken=26e72e8ce007dad9, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WMSignerFX, Version=3.0.0.0, Culture=neutral, PublicKeyToken=26e72e8ce007dad9, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavior\BehaviorManager.cs" />
+    <Compile Include="Bot\Algorithm\BehaviorArchiver.cs" />
+    <Compile Include="Bot\Algorithm\BehaviorExsistChecker.cs" />
+    <Compile Include="Bot\Algorithm\BehaviorsChecker.cs" />
+    <Compile Include="Bot\Algorithm\BotStarter.cs" />
+    <Compile Include="Bot\Algorithm\Chain.cs" />
+    <Compile Include="Behavior\BehaviorArchivator.cs" />
+    <Compile Include="Bot\Algorithm\Boter.cs" />
+    <Compile Include="Bot\Algorithm\MinimalRate.cs" />
+    <Compile Include="Bot\BalanceForBot.cs" />
+    <Compile Include="Bot\BehaviorPayCreator.cs" />
+    <Compile Include="Bot\BotReflect.cs" />
+    <Compile Include="Bot\Managers\BotManager.cs" />
+    <Compile Include="Bot\Managers\BotReflectManager.cs" />
+    <Compile Include="calc\ConvertationInfo.cs" />
+    <Compile Include="CentroBank\CbrMap.cs" />
+    <Compile Include="CentroBank\ICbrDao.cs" />
+    <Compile Include="CentroBank\CurrencyMap.cs" />
+    <Compile Include="currency\Money.cs" />
+    <Compile Include="currency\CurrencyNames.cs" />
+    <Compile Include="MyPay\MyPayMapMetaData.cs" />
+    <Compile Include="Utils\CloneManager.cs" />
+    <Compile Include="Config\ConfigDaoException.cs" />
+    <Compile Include="Config\ConfigValidateException.cs" />
+    <Compile Include="Config\Mapping\Wmids\PurseNotFoundException.cs" />
+    <Compile Include="GUI\ConfigUI\ConfigHandleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ConfigUI\ConfigHandleEditor.Designer.cs">
+      <DependentUpon>ConfigHandleEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Help\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Help\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Initialization\ConfigExsistHandler.cs" />
+    <Compile Include="GUI\Initialization\ConfigDecriptor.cs" />
+    <Compile Include="GUI\Initialization\Templater\ConfigTemplater.cs" />
+    <Compile Include="GUI\Initialization\Handler.cs" />
+    <Compile Include="GUI\Initialization\InitWizard.cs" />
+    <Compile Include="GUI\Initialization\NotImplementedHandler.cs" />
+    <Compile Include="GUI\Initialization\Templater\TemplaterAsker.cs" />
+    <Compile Include="GUI\Initialization\UserPasswordHandler.cs" />
+    <Compile Include="Config\Mapping\Bot\BehaviorMap.cs" />
+    <Compile Include="Config\Mapping\Bot\BehaviorPayMap.cs" />
+    <Compile Include="Config\Mapping\Bot\BotMap.cs" />
+    <Compile Include="Db\DataBase.cs" />
+    <Compile Include="ExchangerAPI\RetvalMap.cs" />
+    <Compile Include="ExchangerAPI\ResponseMap.cs" />
+    <Compile Include="Exchanger\XmlMapping\BidMap.cs" />
+    <Compile Include="Exchanger\XmlMapping\ListBidsMap.cs" />
+    <Compile Include="Utils\GlobalRepository.cs" />
+    <Compile Include="GUI\BL_TLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BL_TLForm.Designer.cs">
+      <DependentUpon>BL_TLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bot\Algorithm\MyPayPositionCorrector.cs" />
+    <Compile Include="Bot\Algorithm\BotBehavior.cs" />
+    <Compile Include="Cache\CacheImpl.cs" />
+    <Compile Include="Bot\Algorithm\Calculator.cs" />
+    <Compile Include="Cache\CashListMyPays.cs" />
+    <Compile Include="CentroBank\CbrDao.cs" />
+    <Compile Include="GUI\ChangeKursZayavkaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChangeKursZayavkaForm.Designer.cs">
+      <DependentUpon>ChangeKursZayavkaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\ConfigDao.cs" />
+    <Compile Include="GUI\ConfigUI\ConfigEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ConfigUI\ConfigEditorForm.Designer.cs">
+      <DependentUpon>ConfigEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ConfigUI\ConfigEditorXmlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ConfigUI\ConfigEditorXmlForm.Designer.cs">
+      <DependentUpon>ConfigEditorXmlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\Crypter\ConfigCrypter.cs" />
+    <Compile Include="Config\Crypter\ConfigCrypterException.cs" />
+    <Compile Include="Config\Crypter\IConfigCrypter.cs" />
+    <Compile Include="Config\Mapping\ConfigMap.cs" />
+    <Compile Include="Config\Mapping\Net\EmailMap.cs" />
+    <Compile Include="Config\Mapping\Net\NetMap.cs" />
+    <Compile Include="Config\Mapping\Net\ProxyMap.cs" />
+    <Compile Include="Config\Mapping\Wmids\PurseMap.cs" />
+    <Compile Include="Config\Mapping\Wmids\WmidMap.cs" />
+    <Compile Include="Config\Mapping\Wmids\WmidsMap.cs" />
+    <Compile Include="calc\Convertation.cs" />
+    <Compile Include="ExchangerAPI\IExchangerUtils.cs" />
+    <Compile Include="ExchangerAPI\Statuses.cs" />
+    <Compile Include="Exchanger\CacheListBids.cs" />
+    <Compile Include="Exchanger\IListBids.cs" />
+    <Compile Include="Exchanger\IListBidsDao.cs" />
+    <Compile Include="Exchanger\ListBidsDao.cs" />
+    <Compile Include="GUI\ConfigUI\ProxyInitializer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ConfigUI\ProxyInitializer.Designer.cs">
+      <DependentUpon>ProxyInitializer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MyWM\BalanceTaker.cs" />
+    <Compile Include="GUI\SystemForms\ExternalDependencies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SystemForms\ExternalDependencies.Designer.cs">
+      <DependentUpon>ExternalDependencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPay\MyPayMap.cs" />
+    <Compile Include="MyPay\MyPaysMap.cs" />
+    <Compile Include="MyPay\MyPayType.cs" />
+    <Compile Include="Security\ICrypter.cs" />
+    <Compile Include="Security\Crypter.cs" />
+    <Compile Include="Security\CrypterException.cs" />
+    <Compile Include="ExchangerAPI\ExchangerUtils.cs" />
+    <Compile Include="ExchangerAPI\NewMyPayParameters.cs" />
+    <Compile Include="ExchangerAPI\XmlRequest.cs" />
+    <Compile Include="GUI\ExchangerRasschetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ExchangerRasschetForm.Designer.cs">
+      <DependentUpon>ExchangerRasschetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exchanger\AllExchanges.cs" />
+    <Compile Include="Exchanger\Spread.cs" />
+    <Compile Include="Exchanger\SpreadCalc.cs" />
+    <Compile Include="Exchanger\Bid.cs" />
+    <Compile Include="Exchanger\ExchType.cs" />
+    <Compile Include="Exchanger\ListBids.cs" />
+    <Compile Include="GUI\GeneralForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GeneralForm.Designer.cs">
+      <DependentUpon>GeneralForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ListZayavForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ListZayavForm.Designer.cs">
+      <DependentUpon>ListZayavForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPay\ListMyPaysDao.cs" />
+    <Compile Include="MyPay\MyPayState.cs" />
+    <Compile Include="GUI\MyWM\MyWMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MyWM\MyWMForm.Designer.cs">
+      <DependentUpon>MyWMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MyZayavkiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MyZayavkiForm.Designer.cs">
+      <DependentUpon>MyZayavkiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetTools\INetSender.cs" />
+    <Compile Include="NetTools\Mail.cs" />
+    <Compile Include="NetTools\NetSender.cs" />
+    <Compile Include="GUI\NewZayavkaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NewZayavkaForm.Designer.cs">
+      <DependentUpon>NewZayavkaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PassForm.Designer.cs">
+      <DependentUpon>PassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PayReflectZayavkaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PayReflectZayavkaForm.Designer.cs">
+      <DependentUpon>PayReflectZayavkaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\BL_TLForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BL_TLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChangeKursZayavkaForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangeKursZayavkaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ConfigUI\ConfigEditorForm.resx">
+      <DependentUpon>ConfigEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ConfigUI\ConfigEditorXmlForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfigEditorXmlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ConfigUI\ConfigHandleEditor.resx">
+      <DependentUpon>ConfigHandleEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ConfigUI\ProxyInitializer.resx">
+      <DependentUpon>ProxyInitializer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExchangerRasschetForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExchangerRasschetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GeneralForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GeneralForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Help\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ListZayavForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListZayavForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MyWM\MyWMForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyWMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MyZayavkiForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyZayavkiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewZayavkaForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewZayavkaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PassForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PayReflectZayavkaForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PayReflectZayavkaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SystemForms\ExternalDependencies.resx">
+      <DependentUpon>ExternalDependencies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SearcherForTorgiForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearcherForTorgiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StatistForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StatistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\WmidInfoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WmidInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ZayavkaToConfigForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZayavkaToConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="webmoney\PursesFromDirection.cs" />
+    <Compile Include="GUI\SearcherForTorgiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SearcherForTorgiForm.Designer.cs">
+      <DependentUpon>SearcherForTorgiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StatistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StatistForm.Designer.cs">
+      <DependentUpon>StatistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExchangerAPI\Torgi.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Threading\Threaded.cs" />
+    <Compile Include="Threading\ThreadManager.cs" />
+    <Compile Include="Timers\TimerManager.cs" />
+    <Compile Include="Trial.cs" />
+    <Compile Include="GUI\WmidInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\WmidInfoForm.Designer.cs">
+      <DependentUpon>WmidInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Trimmer.cs" />
+    <Compile Include="Utils\TimeUtils.cs" />
+    <Compile Include="webmoney\WmCurrency.cs" />
+    <Compile Include="webmoney\WmCurrencyUtil.cs" />
+    <Compile Include="webmoney\WmDirectionsNames.cs" />
+    <Compile Include="XmlInterfaces\BalanceException.cs" />
+    <Compile Include="XmlInterfaces\IXmlInterfaces.cs" />
+    <Compile Include="XmlInterfaces\X3_History\Request\GetOperationsRequestMap.cs" />
+    <Compile Include="XmlInterfaces\WmXmlInterfaces.cs" />
+    <Compile Include="XmlInterfaces\X3_History\Request\X3RequestMap.cs" />
+    <Compile Include="XmlInterfaces\X3_History\Response\HistoryMap.cs" />
+    <Compile Include="XmlInterfaces\X3_History\Response\OperationMap.cs" />
+    <Compile Include="XmlInterfaces\X3_History\Response\OperationsMap.cs" />
+    <Compile Include="XML\XmlVisualizer.cs" />
+    <Compile Include="XML\LinqXmlConverter.cs" />
+    <Compile Include="XML\XmlMapper.cs" />
+    <Compile Include="GUI\ZayavkaToConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ZayavkaToConfigForm.Designer.cs">
+      <DependentUpon>ZayavkaToConfigForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Help\Перед началом работы.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Help\Руководство пользователя.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="licence.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\rootcert.crt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="conf\log.properties.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="ico.ico" />
+    <Content Include="lib\BKeys.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\BKeys.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\log4net.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\WMSignerFX.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\WMSignerFX.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\configTemplate.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ToDo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="lib\BKeys.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="lib\BKeys.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="lib\log4net.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="lib\WMSignerFX.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="lib\WMSignerFX.XML">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="logs\log.properties.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="logs\log.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\configTemplate.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\logTemplate.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="ToDo.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="logs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

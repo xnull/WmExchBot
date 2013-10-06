@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<wm.exchanger.response>
+  <WMExchnagerQuerys wmid="375930844466" type="3">
+    <query id="5314812" exchtype="1" state="1" amountin="2" amountout="57,8" inoutrate="0,0346" outinrate="28,9" inpurse="Z229563384572" outpurse="R675010658902" querydatecr="04.04.2011 10:20:21" querydate="04.04.2011 10:20:21" direction="WMZ-WMR" />
+  </WMExchnagerQuerys>
+  <retval>0</retval>
+  <retdesc />
+</wm.exchanger.response>

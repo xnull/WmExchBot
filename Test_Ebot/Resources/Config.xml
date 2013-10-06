@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<root>
+  <Net tryConnect="5">
+    <Proxy ip="192.168.1.1:8080"  login="null"  pass="testpass" useProxy="true"></Proxy>
+    <Email server="ya.ru"  port="25"  login="null"  pass="testpass"  from="WM@webmoney.ru"  to="x-r-w@ya.ru"  usessl="false"  sendmail="false" ></Email>    
+  </Net>
+  <wmids jobWmid="375930844466">
+    <wmid wmid="375930844466"  AuthType="Classic"  WMKeys="qIGE=" >      
+      <purse type="WMR" number="R675010658902"  summForExch="5"  minsumm="1000" ></purse>
+      <purse type="WMZ" number="Z229563384572"  summForExch="24"  minsumm="33" ></purse>
+    </wmid>
+  </wmids>
+  <Bot job="true" timeout="3" reflectZayavkaTimeout="35" planPayCount="2">
+    <Behaviors>
+      <Behavior fullDirection="WMZ_WMR__WMR_WMZ" guid="123">
+        <pay direction="WMZ_WMR" wmid="375930844466"  operid="2525747"  currentPlanPosition="45"  inamount="51"  outamount="150.59"  beginDate="13.11.2009 16:29:14"  minRate="29,719" />
+        <pay direction="WMR_WMZ" wmid="375930844466"  operid="2525748"  currentPlanPosition="45"  inamount="1463"  outamount="51,2"  beginDate="13.11.2009 16:29:15"  minRate="29,0099" />
+      </Behavior>
+    </Behaviors>
+  </Bot>
+  <Archive>
+    <Behavior fullDirection="WMZ_WMR__WMR_WMZ" guid="123456" planPayCount="2">
+      <pay direction="WMZ_WMR" wmid="375930844466"  operid="2525747"  currentPlanPosition="45"  inamount="51"  outamount="150.59"  beginDate="13.11.2009 16:29:14"  minRate="29,719" />
+      <pay direction="WMR_WMZ" wmid="375930844466"  operid="2525748"  currentPlanPosition="45"  inamount="1463"  outamount="51,2"  beginDate="13.11.2009 16:29:15"  minRate="29,0099" />
+    </Behavior>
+  </Archive>
+</root>
